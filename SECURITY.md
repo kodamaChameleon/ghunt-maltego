@@ -3,7 +3,7 @@
 Ghunt-Maltego is a free and open-source tool which comes with absolutely no warranty; however, we still take your security seriously and wish to implement steps to protect our users. As such, the developer has adopted this security disclosure and response policy to ensure that critical issues are responsibly handled.
 
 ## Supported Versions
-Ghunt-Maltego releases will be versioned using dotted triples, similar to [Semantic Version](http://semver.org/). For this specific document, we will refer to the respective components of this triple as <major>.<minor>.<patch>. The version number may have additional information, such as "-alpha.1", "-beta.2" to mark alpha and beta versions for earlier access. Such releases will be considered as "pre-releases". Only the current version will be supported.
+Ghunt-Maltego releases will be versioned using dotted triples, similar to [Semantic Version](http://semver.org/). For this specific document, we will refer to the respective components of this triple as <major>.<minor>.<patch>. The version number may have additional information, such as "-alpha.1", "-beta.2" to mark alpha and beta versions for earlier access. Such releases will be considered as "pre-releases".
 
 | Version                          | Supported          | Release Date |
 |----------------------------------|--------------------|--------------|
