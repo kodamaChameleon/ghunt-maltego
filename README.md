@@ -22,9 +22,9 @@ Ghunt-Maltego releases will be versioned using dotted triples, similar to [Seman
 ## 🛠️ Setup
 
 ##  ⚙️ Features
-The following is a list of supported Ghunt features.
+The following is a list of supported Ghunt data types.
    
-| Feature         | Supported  |Entity             |
+| Data Type       | Supported  |Entity             |
 |-----------------|------------|-------------------| 
 | Full Name       | ✅         | maltego.Person    |
 | Profile Photos  | ✅         | maltego.Image     |
@@ -39,7 +39,7 @@ The following is a list of supported Ghunt features.
 | Review Location | ✅         |maltego.Location   |
 | Review Photos   | ❌         |                   |
    
-*If a Ghunt feature isn't listed here, then it's probably not currently supported by ghunt-maltego*
+*If a Ghunt feature isn't listed here, then it's probably not currently supported by ghunt-maltego.*
    
 ### 💡 Demo
 
