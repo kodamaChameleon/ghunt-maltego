@@ -1,0 +1,21 @@
+//Welcome to Maltego Machines!
+
+//Each machine starts with a statement like this
+machine("kodama.Ghunt", 
+        displayName:"Ghunt", 
+        author:"Kodama",
+        description: "Enumerate details from gmail account using Ghunt") {
+
+    //Run Maltego Macro
+    start {
+
+        //Put the sequence of transforms to run in here...
+
+        //Start by collecting data from ghunt on an email
+        run("kodama.ghuntFromEmail")
+        
+        //Use stored dynamic properties in Company reviews to generate new entities
+        run("kodama.ghuntToReviews")
+ 
+
+    }
