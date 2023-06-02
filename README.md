@@ -8,6 +8,8 @@
 Per their Github page, "[Ghunt (v2)](https://github.com/mxrch/GHunt) is an offensive Google framework, designed to evolve efficiently.
 It's currently focused on OSINT, but any use related with Google is possible." Ghunt-Maltego utilizes the Ghunt python library to create Transforms in Maltego.
 
+Please use this tool ethically. We are not responsible for any illegal use.
+
 ## 🎚️ Version
 | Version                          | Supported          | Release Date |
 |----------------------------------|--------------------|--------------|
