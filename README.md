@@ -98,6 +98,12 @@ The following is a list of supported Ghunt data types.
    
 *If a Ghunt feature isn't listed here, then it's probably not currently supported by ghunt-maltego.*
    
+## 🖥️ Developer's Notes
+A spot for insight into the developer's 🧠.  
+- The geolocation accuracy of the ghuntToReviews could be improved through such tools as Google's API; however, we stuck with utilizing the geocoder package in order to keep the application totally free  
+- Cover Photos, while easy to implement, seemed mostly to be the default google cover in our (admittedly) small sampling size  
+- Review comments are left as a dynamic property of the maltego.Company entity
+   
 ## 📜 License
 ![image](https://img.shields.io/badge/License-GNU%20GPL-blue)
 
