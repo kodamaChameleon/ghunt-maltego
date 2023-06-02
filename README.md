@@ -18,7 +18,7 @@ It's currently focused on OSINT, but any use related with Google is possible." G
 
 ## 🛠️ Setup
 For more detailed instructions, read the [Wiki](https://github.com/kodamaChameleon/ghunt-maltego/wiki)
-### 📏 Requirements
+### Requirements
 - Maltego 4.3.0
 - Python 3.11.2
    - maltego-trx 1.6.0
@@ -27,7 +27,7 @@ For more detailed instructions, read the [Wiki](https://github.com/kodamaChamele
  - A Gmail Account
  - Ghunt Firefox/Google Companion (Optional)
    
-### ⚙️ Installation
+### Installation
 ```
    cd ~/.local/bin
    git clone https://github.com/kodamaChameleon/ghunt-maltego.git
@@ -35,7 +35,7 @@ For more detailed instructions, read the [Wiki](https://github.com/kodamaChamele
    python3 setup.py
 ```
 
-### 💡 Demo
+### Demo
 
 <img src="img/ghunt.gif">  
    
