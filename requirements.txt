@@ -1,3 +1,3 @@
-maltego-trx 1.6.0
-ghunt 2.0.3
-geocoder 1.38.1
+maltego-trx==1.6.0
+ghunt==2.0.3
+geocoder==1.38.1
