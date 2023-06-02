@@ -1,0 +1,3 @@
+Owner,Author,Disclaimer,Description,Version,Name,UIName,URL,entityName,oAuthSettingId,transformSettingIDs,seedIDs
+KodamaChameleon,Kodama Chameleon <contact@kodamachameleon.com>,,Returns details from ghunt results on a given gmail address,0.1,ghuntfromemail,Gmail address to Details [ghunt],https://transforms.kodamachameleon.com/run/ghuntfromemail,maltego.EmailAddress,,,demo
+KodamaChameleon,Kodama Chameleon <contact@kodamachameleon.com>,,Expands dynamically added ghunt company details into separate entities.,0.1,ghunttoreviews,Ghunt reviews to details [ghunt],https://transforms.kodamachameleon.com/run/ghunttoreviews,maltego.Company,,,demo
