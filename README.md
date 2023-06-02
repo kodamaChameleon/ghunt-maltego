@@ -53,7 +53,7 @@ The extension is available on the following stores :\
 \
 [![Firefox](https://files.catbox.moe/5g2ld5.png)](https://addons.mozilla.org/en-US/firefox/addon/ghunt-companion/)&nbsp;&nbsp;&nbsp;[![Chrome](https://storage.googleapis.com/web-dev-uploads/image/WlD8wC6g8khYWPJUsQceQkhXSlv1/UV4C4ybeBTsZt43U4xis.png)](https://chrome.google.com/webstore/detail/ghunt-companion/dpdcofblfbmmnikcbmmiakkclocadjab)
    
-🚨**Warning:**🚨 It is fundamentally dangerous to provide your credentials to unfamiliar applications. Best practice here would be to create a separate gmail account used solely for the purpose of ghunt.
+**Warning:** 🚨🚨🚨 It is fundamentally dangerous to provide your credentials to unfamiliar applications. Best practice here would be to create a separate gmail account used solely for the purpose of ghunt.
 
 ### Installing Local Transforms
 1) In Maltego, select the Transforms tab and click *New Local Transform*
