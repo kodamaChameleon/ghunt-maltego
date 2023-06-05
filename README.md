@@ -3,20 +3,16 @@
 
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 
+Version: 1.0.0-beta  
+
+Release: 2 June 2023
+
 ## 💎 About
 
 Per their Github page, "[Ghunt (v2)](https://github.com/mxrch/GHunt) is an offensive Google framework, designed to evolve efficiently.
 It's currently focused on OSINT, but any use related with Google is possible." Ghunt-Maltego utilizes the Ghunt python library to create Transforms in Maltego.
 
-Please use this tool ethically. We are not responsible for any illegal use.
-
-## 🎚️ Version
-| Version                          | Supported          | Release Date |
-|----------------------------------|--------------------|--------------|
-| Ghunt-Maltego 1.0.x              | ✅                | TBD          |
-| 🕰️ Ghunt-Maltego 1.0.0-beta      | ✅                | 2 June 2023  |
-
-🕰️ *Current version*
+Please use this tool ethically by respecting people's privacy and only collecting intelligence where explicit permission has been granted or otherwise legally qualified to do so. We are not responsible for any illegal use.
 
 ## 🛠️ Setup
 For more detailed instructions, read the [Wiki](https://github.com/kodamaChameleon/ghunt-maltego/wiki)
