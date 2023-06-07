@@ -54,7 +54,7 @@ For more detailed instructions, read the [Wiki](https://github.com/kodamaChamele
 | Review Location | ✅         |maltego.Location   |
 | Review Photos   | ❌         |                   |
 
-*If a Ghunt feature isn't listed here, then it's probably not currently supported by ghunt-maltego.*
+*If a Ghunt feature isn't listed here, then it's probably not currently supported by ghunt-maltego. If you would like to see it added, create a feature-enhancement request in GitHub explaining the feature desired and why it would be beneficial to the overall application.*
    
 ## 📜 License
 ![image](https://img.shields.io/badge/License-GNU%20GPL-blue)
