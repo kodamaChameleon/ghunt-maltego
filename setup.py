@@ -17,3 +17,5 @@ def ghunt_login():
 if __name__ == '__main__':
     install_requirements()
     ghunt_login()
+
+    subprocess.check_call(['python3', 'project.py', 'list'])
