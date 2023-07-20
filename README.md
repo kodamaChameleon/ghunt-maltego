@@ -32,12 +32,10 @@ For more detailed instructions, read the [Wiki](https://github.com/kodamaChamele
    cd ghunt-maltego
    python3 setup.py
 ```
-
-### Demo
-
-<img src="img/demo.PNG">  
    
 ## 🧙 Features
+
+<img src="img/demo.PNG">  
    
 | Data Type       | Supported  |Entity             |
 |-----------------|------------|-------------------| 
