@@ -5,8 +5,8 @@ from extensions import registry
 
 @registry.register_transform(
     display_name="Ghunt reviews to details [ghunt]", 
-    input_entity="maltego.Company",
-    description='Expands dynamically added ghunt company details into separate entities.',
+    input_entity="maltego.Organization",
+    description='Expands dynamically added ghunt organization details into separate entities.',
     settings=[],
     output_entities=["maltego.Unknown"]
     )

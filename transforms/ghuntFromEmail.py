@@ -57,14 +57,14 @@ class ghuntFromEmail(DiscoverableTransform):
                 err, stats, reviews, photos = await gmaps.get_reviews(as_client, person.personId)
                 if reviews:
                     for r in reviews:
-                        company = response.addEntity("maltego.Company", value = r.location.name)
-                        company.additionalFields.append(["rating", "Rating", '', str(r.rating) + "/5"])
-                        company.additionalFields.append(["address", "Address", '', r.location.address])
-                        company.additionalFields.append(["type", "Type", '', r.location.types])
-                        company.additionalFields.append(["tags", "Tags", '', r.location.tags])
-                        company.additionalFields.append(["comment", "Comment", '', r.comment])
-                        company.additionalFields.append(["latitude", "Latitude", '', r.location.position.latitude])
-                        company.additionalFields.append(["longitude", "Longitude", '', r.location.position.longitude])
+                        organization = response.addEntity("maltego.Organization", value = r.location.name)
+                        organization.additionalFields.append(["rating", "Rating", '', str(r.rating) + "/5"])
+                        organization.additionalFields.append(["address", "Address", '', r.location.address])
+                        organization.additionalFields.append(["type", "Type", '', r.location.types])
+                        organization.additionalFields.append(["tags", "Tags", '', r.location.tags])
+                        organization.additionalFields.append(["comment", "Comment", '', r.comment])
+                        organization.additionalFields.append(["latitude", "Latitude", '', r.location.position.latitude])
+                        organization.additionalFields.append(["longitude", "Longitude", '', r.location.position.longitude])
             
             # Handle query errors
             else:
