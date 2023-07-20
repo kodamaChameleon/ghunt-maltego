@@ -12,10 +12,12 @@ machine("kodama.Ghunt",
         //Put the sequence of transforms to run in here...
 
         //Start by collecting data from ghunt on an email
-        run("kodamachameleon.ghuntFromEmail")
+        run("ghuntfromemail")
+
         
         //Use stored dynamic properties in Company reviews to generate new entities
-        run("kodamachameleon.ghuntToReviews")
+        run("ghunttoreviews")
+
 
     }
 }
