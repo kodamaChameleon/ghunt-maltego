@@ -35,7 +35,7 @@ For more detailed instructions, read the [Wiki](https://github.com/kodamaChamele
 
 ### Demo
 
-<img src="img/ghunt.gif">  
+<img src="img/demo.PNG">  
    
 ## 🧙 Features
    
