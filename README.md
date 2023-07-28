@@ -3,9 +3,7 @@
 
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 
-Version: 1.0.1
-
-Release: 2 June 2023
+Version: 1.1.0
 
 ## 💎 About
 
