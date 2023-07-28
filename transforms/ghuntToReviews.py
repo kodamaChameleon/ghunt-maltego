@@ -1,14 +1,15 @@
 import trio, geocoder
 from maltego_trx.maltego import MaltegoTransform, MaltegoMsg
 from maltego_trx.transform import DiscoverableTransform
-from extensions import registry
+from extensions import registry, ghunt_set
 
 @registry.register_transform(
     display_name="Ghunt reviews to details [ghunt]", 
     input_entity="maltego.Organization",
     description='Expands dynamically added ghunt organization details into separate entities.',
     settings=[],
-    output_entities=["maltego.Unknown"]
+    output_entities=["maltego.Unknown"],
+    transform_set=ghunt_set
     )
 class ghuntToReviews(DiscoverableTransform):
 

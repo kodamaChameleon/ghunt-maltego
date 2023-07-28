@@ -1,13 +1,15 @@
-from maltego_trx.decorator_registry import TransformRegistry
+from maltego_trx.decorator_registry import TransformRegistry, TransformSet
 
 registry = TransformRegistry(
         owner="KodamaChameleon",
         author="Kodama Chameleon <contact@kodamachameleon.com>",
         host_url="https://transforms.kodamachameleon.com",
-        seed_ids=["demo"]
+        seed_ids=["Ghunt"]
 )
 
 # The rest of these attributes are optional
+
+ghunt_set = TransformSet("Ghunt", "Ghunt Transforms")
 
 # metadata
 registry.version = "0.1"

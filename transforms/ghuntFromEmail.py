@@ -4,14 +4,15 @@ from ghunt.objects.base import GHuntCreds
 from ghunt.helpers import gmaps
 from maltego_trx.maltego import MaltegoTransform, MaltegoMsg
 from maltego_trx.transform import DiscoverableTransform
-from extensions import registry
+from extensions import registry, ghunt_set
 
 @registry.register_transform(
     display_name="Gmail address to Details [ghunt]", 
     input_entity="maltego.EmailAddress",
     description='Returns details from ghunt results on a given gmail address',
     settings=[],
-    output_entities=["maltego.Unknown"]
+    output_entities=["maltego.Unknown"],
+    transform_set=ghunt_set
     )
 class ghuntFromEmail(DiscoverableTransform):
     
