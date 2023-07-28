@@ -4,6 +4,10 @@ import subprocess, trio
 def install_requirements():
     subprocess.check_call(['pip', 'install', '-r', 'requirements.txt'])
 
+# Build config file for easy importation
+def build_config():
+    subprocess.check_call(['python3', 'project.py', 'list'])
+
 # Obtain Ghunt credentials
 def ghunt_login():
 
@@ -17,5 +21,4 @@ def ghunt_login():
 if __name__ == '__main__':
     install_requirements()
     ghunt_login()
-
-    subprocess.check_call(['python3', 'project.py', 'list'])
+    build_config()
