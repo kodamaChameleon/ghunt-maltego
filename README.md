@@ -9,8 +9,10 @@ Version: 1.1.0
 
 ## 💎 About
 
-Per their Github page, "[Ghunt (v2)](https://github.com/mxrch/GHunt) is an offensive Google framework, designed to evolve efficiently. Ghunt is developed by [mxrch](https://github.com/mxrch).
+Per their Github page, "[Ghunt (v2)](https://github.com/mxrch/GHunt) is an offensive Google framework, designed to evolve efficiently. 
 It's currently focused on OSINT, but any use related with Google is possible." Ghunt-Maltego utilizes the Ghunt python library to create Transforms in Maltego.
+
+Ghunt is developed by [mxrch](https://github.com/mxrch). *Ghunt-Maltego is an independent third-party utilizing the Ghunt library and not officially associated with Ghunt.*
 
 Please use this tool ethically by respecting people's privacy and only collecting intelligence where explicit permission has been granted or otherwise legally qualified to do so. We are not responsible for any illegal use.
 
