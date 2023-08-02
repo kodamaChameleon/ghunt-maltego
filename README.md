@@ -1,5 +1,7 @@
 # Ghunt-Maltego
-### Maltego Transform Partner to Ghunt 
+### Maltego Transform Partner to Ghunt
+
+<img src="img/ghunt-maltego.png">
 
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 
@@ -7,7 +9,7 @@ Version: 1.1.0
 
 ## 💎 About
 
-Per their Github page, "[Ghunt (v2)](https://github.com/mxrch/GHunt) is an offensive Google framework, designed to evolve efficiently.
+Per their Github page, "[Ghunt (v2)](https://github.com/mxrch/GHunt) is an offensive Google framework, designed to evolve efficiently. Ghunt is developed by [mxrch](https://github.com/mxrch).
 It's currently focused on OSINT, but any use related with Google is possible." Ghunt-Maltego utilizes the Ghunt python library to create Transforms in Maltego.
 
 Please use this tool ethically by respecting people's privacy and only collecting intelligence where explicit permission has been granted or otherwise legally qualified to do so. We are not responsible for any illegal use.
