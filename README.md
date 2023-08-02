@@ -1,7 +1,6 @@
-# Ghunt-Maltego
-### Maltego Transform Partner to Ghunt
-
 <img src="img/ghunt-maltego.png">
+
+### Maltego Transform Partner to Ghunt
 
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 
