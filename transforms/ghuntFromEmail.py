@@ -88,6 +88,6 @@ class ghuntFromEmail(DiscoverableTransform):
 
             # Handle query errors
             else:
-                response.addEntity("maltego.Phrase", value = "Profile not found")
+                response.addUIMessage("Email address not found", UIM_TYPES['partial'])
 
         trio.run(main) # running our async code in a non-async code
