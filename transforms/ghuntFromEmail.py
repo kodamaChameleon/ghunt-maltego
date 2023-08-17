@@ -42,10 +42,11 @@ class ghuntFromEmail(DiscoverableTransform):
                     name.addProperty("lastname", value = person.names["PROFILE"].lastName)
 
                 # Profile Photo
-                if "PROFILE" in person.profilePhotos:
-                    photo = response.addEntity("maltego.Image")
-                    photo.addProperty("description", value = person.profilePhotos["PROFILE"].flathash)
-                    photo.addProperty("url", value = person.profilePhotos["PROFILE"].url)
+                if "PROFILE" in person.profilePhotos and person.profilePhotos['PROFILE'].isDefault == False:
+                    profile_photo = response.addEntity("maltego.Image")
+                    profile_photo.addProperty("description", value = person.profilePhotos["PROFILE"].flathash)
+                    profile_photo.addProperty("url", value = person.profilePhotos["PROFILE"].url)
+                    profile_photo.setLinkLabel("Profile")
 
                 # Enabled applications
                 if "PROFILE" in person.inAppReachability:
