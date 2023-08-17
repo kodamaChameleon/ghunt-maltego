@@ -36,25 +36,42 @@ For more detailed instructions, read the [Wiki](https://github.com/kodamaChamele
    
 ## 🧙 Features
 
+*If a Ghunt feature isn't listed here, then it's probably not currently supported by ghunt-maltego. If you would like to see it added, create a feature-enhancement request in GitHub explaining the feature desired and why it would be beneficial to the overall application.*
+
+### Ghunt Email
+
 <img src="img/demo.PNG">  
    
-| Data Type       | Supported  |Entity             |
-|-----------------|------------|-------------------| 
-| Full Name       | ✅         | maltego.Person    |
-| Profile Photos  | ✅         | maltego.Image     |
-| Cover Photos    | ✅         |                   |
-| User Type       | ❌         |                   |
-| Gaia ID         | ❌         |                   |
-| Enabled Apps    | ✅         |maltego.Service    |
-| Review Company  | ✅         |maltego.Company    |
-| Review Rating   | ✅         |maltego.Sentiment  |
-| Review Type     | ✅         |maltego.Industry   |
-| Review Tag      | ✅         |maltego.hashtag    |
-| Review Location | ✅         |maltego.Location   |
-| Review Photos   | ❌         |                   |
+| Data Type                     | Supported  |Entity                |
+|-------------------------------|------------|----------------------| 
+| Full Name                     | ✅         | maltego.Person       |
+| Profile Photos                | ✅         | maltego.Image        |
+| Cover Photos                  | ✅         |                      |
+| User Type                     | ❌         |                      |
+| Gaia ID                       | ❌         |                      |
+| Enabled Apps                  | ✅         | maltego.Service      |
+| Review Company                | ✅         | maltego.Company      |
+| Review Rating                 | ✅         | maltego.Sentiment    |
+| Review Type                   | ✅         | maltego.Industry     |
+| Review Tag                    | ✅         | maltego.hashtag      |
+| Review Location               | ✅         | maltego.Location     |
+| Review Photos                 | ❌         |                      |
 
-*If a Ghunt feature isn't listed here, then it's probably not currently supported by ghunt-maltego. If you would like to see it added, create a feature-enhancement request in GitHub explaining the feature desired and why it would be beneficial to the overall application.*
-   
+### Ghunt Drive
+
+<img src="img/demo2.PNG">
+
+| Data Type                     | Supported  |Entity                |
+|-------------------------------|------------|----------------------|
+| Creation Date     | ✅         | maltego.DateTime     |
+| Modification Date | ✅         | maltego.DateTime     |
+| Owner             | ✅         | maltego.Person       |
+| Organization      | ✅         | maltego.Organization |
+| Domain            | ✅         | maltego.Domain       |
+| Title             | ✅         | maltego.Phrase       |
+| Hash              | ✅         | maltego.Hash         |
+| Comments          | ✅         | maltego.Phrase       |
+
 ## 📜 License
 ![image](https://img.shields.io/badge/License-GNU%20GPL-blue)
 
