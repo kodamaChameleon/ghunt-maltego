@@ -59,7 +59,7 @@ For more detailed instructions, read the [Wiki](https://github.com/kodamaChamele
 
 ### Ghunt Drive
 
-<img src="img/demo2.PNG">
+<img src="img/demo2.png">
 
 | Data Type                     | Supported  |Entity                |
 |-------------------------------|------------|----------------------|
