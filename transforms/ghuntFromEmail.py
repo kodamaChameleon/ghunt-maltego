@@ -6,6 +6,10 @@ from maltego_trx.maltego import MaltegoTransform, MaltegoMsg, UIM_TYPES
 from maltego_trx.transform import DiscoverableTransform
 from extensions import registry, ghunt_set
 
+error_messages = {
+    "JSONDecodeError": "\nGoogle might be rate limiting your IP address"
+}
+
 @registry.register_transform(
     display_name="Gmail address to Details [ghunt]", 
     input_entity="maltego.EmailAddress",
@@ -77,7 +81,10 @@ class ghuntFromEmail(DiscoverableTransform):
                             organization.additionalFields.append(["longitude", "Longitude", '', r.location.position.longitude])
                 except Exception as e:
                    error_type = type(e).__name__
-                   response.addUIMessage(f"{error_type}: {e}", UIM_TYPES['partial'] )
+                   error_message = f"{error_type}: {e}"
+                   if error_type in error_messages:
+                       error_message += error_messages[error_type]
+                   response.addUIMessage(error_message, UIM_TYPES['partial'] )
 
             # Handle query errors
             else:
