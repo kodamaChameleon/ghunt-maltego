@@ -2,7 +2,7 @@ import httpx, trio
 from ghunt.apis.peoplepa import PeoplePaHttp
 from ghunt.objects.base import GHuntCreds
 from ghunt.helpers import gmaps
-from maltego_trx.maltego import MaltegoTransform, MaltegoMsg
+from maltego_trx.maltego import MaltegoTransform, MaltegoMsg, UIM_TYPES
 from maltego_trx.transform import DiscoverableTransform
 from extensions import registry, ghunt_set
 
@@ -63,18 +63,22 @@ class ghuntFromEmail(DiscoverableTransform):
                         app.addProperty("banner", value = "Google App")
 
                 # Reviews
-                err, stats, reviews, photos = await gmaps.get_reviews(as_client, person.personId)
-                if reviews:
-                    for r in reviews:
-                        organization = response.addEntity("maltego.Organization", value = r.location.name)
-                        organization.additionalFields.append(["rating", "Rating", '', str(r.rating) + "/5"])
-                        organization.additionalFields.append(["address", "Address", '', r.location.address])
-                        organization.additionalFields.append(["type", "Type", '', r.location.types])
-                        organization.additionalFields.append(["tags", "Tags", '', r.location.tags])
-                        organization.additionalFields.append(["comment", "Comment", '', r.comment])
-                        organization.additionalFields.append(["latitude", "Latitude", '', r.location.position.latitude])
-                        organization.additionalFields.append(["longitude", "Longitude", '', r.location.position.longitude])
-            
+                try:
+                    err, stats, reviews, photos = await gmaps.get_reviews(as_client, person.personId)
+                    if reviews:
+                        for r in reviews:
+                            organization = response.addEntity("maltego.Organization", value = r.location.name)
+                            organization.additionalFields.append(["rating", "Rating", '', str(r.rating) + "/5"])
+                            organization.additionalFields.append(["address", "Address", '', r.location.address])
+                            organization.additionalFields.append(["type", "Type", '', r.location.types])
+                            organization.additionalFields.append(["tags", "Tags", '', r.location.tags])
+                            organization.additionalFields.append(["comment", "Comment", '', r.comment])
+                            organization.additionalFields.append(["latitude", "Latitude", '', r.location.position.latitude])
+                            organization.additionalFields.append(["longitude", "Longitude", '', r.location.position.longitude])
+                except Exception as e:
+                   error_type = type(e).__name__
+                   response.addUIMessage(f"{error_type}: {e}", UIM_TYPES['partial'] )
+
             # Handle query errors
             else:
                 response.addEntity("maltego.Phrase", value = "Profile not found")
