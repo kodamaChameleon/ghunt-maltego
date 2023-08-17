@@ -4,7 +4,7 @@
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 
-Version: 1.1.0
+Version: 1.2.0
 
 ## 💎 About
 
@@ -16,17 +16,17 @@ Ghunt is developed by [mxrch](https://github.com/mxrch). *Ghunt-Maltego is an in
 Please use this tool ethically by respecting people's privacy and only collecting intelligence where explicit permission has been granted or otherwise legally qualified to do so. We are not responsible for any illegal use.
 
 ## 🛠️ Setup
+
 For more detailed instructions, read the [Wiki](https://github.com/kodamaChameleon/ghunt-maltego/wiki)
+
 ### Requirements
 - Maltego 4.3.0
-- Python 3.11.2
-   - maltego-trx 1.6.0
-   - ghunt 2.0.3
-   - geocoder 1.38.1
- - A Gmail Account
- - Ghunt Firefox/Google Companion (Optional)
+- [Python 3.11.2](./requirements.txt)
+- A Gmail Account
+- Ghunt Firefox/Google Companion (Optional)
    
 ### Installation
+
 ```
    cd ~/.local/bin
    git clone https://github.com/kodamaChameleon/ghunt-maltego.git
@@ -42,7 +42,7 @@ For more detailed instructions, read the [Wiki](https://github.com/kodamaChamele
 |-----------------|------------|-------------------| 
 | Full Name       | ✅         | maltego.Person    |
 | Profile Photos  | ✅         | maltego.Image     |
-| Cover Photos    | ❌         |                   |
+| Cover Photos    | ✅         |                   |
 | User Type       | ❌         |                   |
 | Gaia ID         | ❌         |                   |
 | Enabled Apps    | ✅         |maltego.Service    |
