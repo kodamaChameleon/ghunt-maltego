@@ -48,6 +48,13 @@ class ghuntFromEmail(DiscoverableTransform):
                     profile_photo.addProperty("url", value = person.profilePhotos["PROFILE"].url)
                     profile_photo.setLinkLabel("Profile")
 
+                # Cover Photo
+                if "PROFILE" in person.coverPhotos and person.coverPhotos['PROFILE'].isDefault == False:
+                    profile_photo = response.addEntity("maltego.Image")
+                    profile_photo.addProperty("description", value = person.coverPhotos["PROFILE"].flathash)
+                    profile_photo.addProperty("url", value = person.coverPhotos["PROFILE"].url)
+                    profile_photo.setLinkLabel("Cover")
+
                 # Enabled applications
                 if "PROFILE" in person.inAppReachability:
 
@@ -70,7 +77,6 @@ class ghuntFromEmail(DiscoverableTransform):
             
             # Handle query errors
             else:
-                error = response.addEntity("maltego.Phrase")
-                error.addProperty("text", value = "Profile not found")
+                response.addEntity("maltego.Phrase", value = "Profile not found")
 
         trio.run(main) # running our async code in a non-async code
