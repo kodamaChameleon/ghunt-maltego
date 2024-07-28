@@ -31,6 +31,8 @@ For more detailed instructions, read the [Wiki](https://github.com/kodamaChamele
    cd ~/.local/bin
    git clone https://github.com/kodamaChameleon/ghunt-maltego.git
    cd ghunt-maltego
+   python3 -m venv .venv
+   source .venv/bin/activate
    python3 setup.py
 ```
    
