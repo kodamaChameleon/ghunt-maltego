@@ -42,6 +42,8 @@ For more detailed instructions, read the [Wiki](https://github.com/kodamaChamele
 
 ### Ghunt Email
 
+> ⚠️ While much better for individual's privacy, unfortunately some of these features are no longer available from ghunt due to Google increasing privacy restrictions.
+
 <img src="img/demo.PNG">  
    
 | Data Type                     | Supported  |Entity                |
