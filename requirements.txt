@@ -1,3 +1,4 @@
 maltego-trx==1.6.0
-ghunt==2.0.4
+ghunt>=2.0.4
 geocoder==1.38.1
+trio>=0.28.0

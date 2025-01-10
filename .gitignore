@@ -2,3 +2,4 @@
 *.mtz
 test_data
 .venv
+.vscode

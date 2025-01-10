@@ -1,4 +1,5 @@
-import subprocess, trio
+import subprocess
+import asyncio
 
 # Install required python dependencies
 def install_requirements():
@@ -9,16 +10,16 @@ def build_config():
     subprocess.check_call(['python3', 'project.py', 'list'])
 
 # Obtain Ghunt credentials
-def ghunt_login():
-
+async def ghunt_login():
     try:
         from ghunt.modules import login
     except ImportError:
         print("Failed to import the ghunt credentials module")
+        return
 
-    trio.run(login.check_and_login, None, False)
+    await login.check_and_login(None, False)
 
 if __name__ == '__main__':
     install_requirements()
-    ghunt_login()
+    asyncio.run(ghunt_login())
     build_config()
